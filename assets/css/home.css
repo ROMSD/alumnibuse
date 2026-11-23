@@ -1805,10 +1805,11 @@ button {
     .hero-image::after {
         background: linear-gradient(
             90deg,
-            rgba(17, 1, 103, 0.78) 0%,
-            rgba(17, 1, 103, 0.60) 45%,
-            rgba(17, 1, 103, 0.25) 100%
+            rgba(17, 1, 103, 0.78) 0.65%,
+            rgba(17, 1, 103, 0.60) 0.45%,
+            rgba(17, 1, 103, 0.25) 0.25%
         );
     }
 }
+
 
