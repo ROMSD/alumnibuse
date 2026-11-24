@@ -1797,13 +1797,21 @@ button {
   @keyframes blink { 0%,100%{ opacity:1; transform:scale(1);} 50%{ opacity:0.3; transform:scale(0.8);} }
 
   @media(max-width:900px){ .stats-section{ grid-template-columns:repeat(2,1fr);} }
-  @media(max-width:500px){ .stats-section{ grid-template-columns:1fr;} }
+  @media(max-width:500px){ .stats-section{ grid-template-columns:1fr;} 
+                          
 /* ========================================
    MOBILE HERO IMAGE OVERLAY
 ======================================== */
-@media screen and (max-width: 768px) {
-    .hero-image::after {
-        background: none !important;
-    }
-}
 
+@media screen and (max-width: 768px) {
+
+    .hero-image::after {
+        background: linear-gradient(
+            90deg,
+            rgba(17, 1, 103, 0.35) 0%,
+            rgba(17, 1, 103, 0.20) 50%,
+            rgba(17, 1, 103, 0.05) 100%
+        ) !important;
+    }
+
+}
